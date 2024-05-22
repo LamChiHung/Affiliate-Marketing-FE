@@ -1,0 +1,14 @@
+.thanksPage{
+    width: 100%;
+    height: calc(100vh - 2px);
+    background-image: linear-gradient(45deg, $color-primary, $color-secondary);
+    h1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+    }
+}

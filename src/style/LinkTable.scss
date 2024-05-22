@@ -1,0 +1,112 @@
+.linkTable{
+    &-createButton{
+        margin-bottom: 20px;
+        width: 200px;
+        height: 40px;
+        border: none;
+        background-image: linear-gradient(45deg, $color-primary, $color-secondary);
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-page{
+            &-page{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-color: $color-primary;
+                text-align: center;
+                line-height: 20px;
+                border-radius: 4px;
+                margin-right: 5px;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+                
+            }
+            .current-page {
+                background-color: $color-secondary;
+            }
+            &-input{
+                width: 30px;
+                text-align: center;
+                margin-right: 4px;
+            }
+            &-total{
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+            &-find{
+                width: 80px;
+                height: 30px;
+                border-radius: 4px;
+                border: none;
+                color: #fff;
+                font-weight: bold;
+                background-image: linear-gradient(45deg,$color-trinary,$color-secondary);
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    table{
+        width: 1240px;
+        border-collapse: collapse;
+        z-index: 1;
+    }
+    td,th {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 8px;
+            background-color: #fff;          
+            .deleteIcon{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+            }
+            .deleteText{
+                font-size: 16px;
+                display: inline-block;
+                margin-left: 5px;
+                text-decoration: underline;
+                color: $color-trinary;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            
+        }
+    th{
+        background-color: $color-primary;
+        font-weight: bold;
+    }
+    .text-left {
+        text-align: left;
+    }
+    &-productLink{
+        display: flex;
+        justify-content: space-between;
+        &-copy{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

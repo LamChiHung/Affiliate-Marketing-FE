@@ -1,0 +1,85 @@
+.header{
+    width: 100%;
+    min-height: 80px;
+    position: relative;    
+
+    &-background{
+        width: 100%;
+        min-height: 80px;
+        background-image: linear-gradient(90deg, $color-trinary, $color-secondary);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        &-container{
+            width: 1240px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-left{
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                height: 60px;
+                border-radius: 20px;
+                padding: 4px;
+                &:hover{
+                    cursor: pointer;
+                }
+                &-logo{
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                }
+                &-text{
+                    color: $color-secondary;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+            }
+            &-right{
+                display: flex;
+                align-items: center;
+                &-group1, &-group2, &-group3{
+                    display: flex;
+                    align-items: center;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+                &-person{
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 20px;
+                    svg{
+                        fill: #fff;     
+                    }
+                }
+                &-name, &-logoutText, &-rewardPoint{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                &-logout{
+                    margin-left: 20px;
+                    width: 30px;
+                    height: 30px;
+                }
+                &-reward{
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
+                    svg {
+                            #secondary{
+                                fill: none !important
+                            }
+                        }
+                }
+                
+            }
+        }
+    }
+}
